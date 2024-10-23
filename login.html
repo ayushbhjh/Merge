@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+  
+</head>
+<body>
+  <div class="navbar">
+    <a href="Index.html" class="logo"
+      >Merge <img src="folder_10253110.png" alt="remote"
+    /></a>
+    <a href="Index.html">Home</a>
+    <a href="Index.html" >About</a>
+    <a href="Sevices.html">Course</a>
+    <a href="contact.html">Contact</a>
+    <a href="signup.html">Signup</a>
+  </div>
+  <div class="login-container">
+    <div class="login-box">
+      <h1>Login to Your Account</h1>
+
+      <form id="login-form">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter Password" required />
+        </div>
+
+        <button type="submit" class="login-btn">Login</button>
+
+        <p class="signup-link">
+          Don't have an account? <a href="signup.html">Sign up here</a>.
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> Merge. All rights reserved.</p>
+    </div>
+  </footer>
+  
+</body>
+<script src="login.js"></script>
+</html>

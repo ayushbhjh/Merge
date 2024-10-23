@@ -1,0 +1,297 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #ebdede;
+  color: #333;
+  /* padding: 20px; */
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e48909;
+  width: 100%;
+  height: auto;
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo {
+  color: #9509e1; 
+  text-decoration: none;
+  font-size: 3em; /* Increased font size for better visibility */
+  display: flex;
+  align-items: center;
+  font-style:initial;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.navbar .logo img {
+  width: 40px; /* Adjust the size of the logo image */
+  height: 40px; /* Ensure the image is a square */
+  margin-left: 10px;
+  border-radius: 50%; /* Add border radius for a rounded logo */
+}
+
+.navbar .logo:hover {
+  color: #ec1059; /* Change text color on hover */
+  transform: scale(1.05); /* Slightly enlarge the logo on hover */
+}
+
+/* Navbar link styles */
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  border-radius: 5px; 
+  font-size: 1.9em;/* Rounded corners */
+  margin-right: 2em;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+/* Hover effect for navbar links */
+.navbar a:hover {
+  color: #007bff; /* Change text color on hover */
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background on hover */
+  transform: scale(1.05); /* Slightly enlarge the link on hover */
+}
+
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+  }
+}
+/* Home Section Styles */
+.home {
+  /* background-image: url("https://img.freepik.com/free-photo/laptop-screen-with-technical-information_53876-101869.jpg?t=st=1729620754~exp=1729624354~hmac=d1ad86557c73e8dcd3704f08d8a06b157498dcf8fb12f9b07d6ca2310fd8e2a3&w=2000"); */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  height: 100vh; /* Full height of the viewport */
+  display: flex; /* Use flexbox to center content */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  color: rgb(44, 209, 11);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Text shadow for readability */
+  padding: 20px; /* Padding around the content */
+  text-align: center; /* Center align the text */
+}
+
+/* Heading Styles */
+.home h1 {
+  font-size: 3.5em; /* Large font size for the main heading */
+  margin-bottom: 20px; /* Space below the heading */
+  font-weight: 700; /* Bold font for emphasis */
+  line-height: 1.2; /* Improve readability with line height */
+  text-transform: uppercase; /* Uppercase for a more impactful look */
+  letter-spacing: 1px; /* Slightly increase spacing between letters */
+  color: #f7ba05; /* White color for contrast */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text readability */
+  padding: 10px 20px; /* Padding around the text */
+  border-radius: 8px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  transition: transform 0.3s, color 0.3s; /* Smooth transitions for hover effects */
+}
+
+/* Hover effect for the heading */
+.home h1:hover {
+  color: #f4f4f4; /* Lighter color on hover */
+  transform: scale(1.05); /* Slightly enlarge the heading on hover */
+}
+
+
+/* Paragraph Styles */
+.home p {
+  font-size: 1.3em; /* Adjusted font size for better readability */
+  margin: 10px 0 20px; /* Space above and below paragraphs */
+  max-width: 800px; /* Limit width for readability */
+  line-height: 1.6; /* Improve readability with increased line height */
+  opacity: 0.95; /* Slightly less transparent for better legibility */
+  color: #ffffff; /* Set text color to white for better contrast */
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent background for improved readability */
+  padding: 15px; /* Padding around the paragraph text */
+  border-radius: 8px; /* Rounded corners for a softer look */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Light shadow for depth */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for paragraphs */
+.home p:hover {
+  transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+
+/* Call-to-Action Button Styles */
+.cta-button {
+  display: inline-block;
+  background-color: #007bff; /* Primary button color */
+  color: white; /* Text color */
+  padding: 15px 30px; /* Padding for the button */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  font-size: 1.2em; /* Font size for the button */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+  margin-top: 20px; /* Space above the button */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+/* Hover effect for the call-to-action button */
+.cta-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 2.5em; /* Smaller font size for mobile */
+  }
+
+  .home p {
+    font-size: 1.1em; /* Smaller font size for mobile */
+  }
+
+  .cta-button {
+    padding: 10px 20px; /* Smaller padding for mobile */
+    font-size: 1em; /* Smaller font size for the button */
+  }
+}
+
+/* About Us Page Styles */
+/* About Section Styles */
+.about {
+  background-color: #f9f9f9;
+  padding: 3rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #008cba;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.about h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #008cba;
+  margin: 10px auto;
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.about p:last-child {
+  margin-bottom: 0;
+}
+
+.about {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.about:hover {
+  background-color: #eef4f7;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 1.5rem;
+  }
+
+  .about h2 {
+    font-size: 1.8rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+}
+
+.footer {
+  background-color: #2c3e50; /* Darker background */
+  color: #ffffff; /* White text color */
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around; /* Space out sections */
+  padding: 20px 10%;
+}
+
+.footer-section {
+  flex: 1; /* Equal width for sections */
+  padding: 20px;
+}
+
+.footer-section h2 {
+  color: #f39c12; /* Bright color for headings */
+  margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section ul {
+  margin: 5px 0;
+  line-height: 1.6; /* Better readability */
+}
+
+.footer-section ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+}
+
+.footer-section ul li a {
+  color: #ffffff; /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.footer-section ul li a:hover {
+  color: #f39c12; /* Color change on hover */
+}
+
+.footer-bottom {
+  background-color: #1a252f; /* Darker section for copyright */
+  padding: 10px 0;
+}
+
+.footer-bottom p {
+  margin: 0;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Couses</title>
+  <link rel="stylesheet" href="Services.css">
+</head>
+<body>
+  <div class="navbar">
+    <a href="Index.html" class="logo"
+      >Merge <img src="folder_10253110.png" alt="remote"
+    /></a>
+    <a href="Index.html">Home</a>
+    <a href="Index.html" >About</a>
+    <a href="Sevices.html">Course</a>
+    <a href="contact.html">Contact</a>
+    <a href="signup.html">Signup</a>
+  </div>
+  <div id="courses" class="courses">
+    <h1>Our Courses</h1>
+    <p>
+      We offer a range of courses designed to help students excel in open-source contributions and gain hands-on experience with industry-leading programs like Google Summer of Code (GSoC), MLH Fellowship, and more.
+    </p>
+
+    <!-- Course 1 -->
+    <div class="course-card">
+      <h2>GSoC Preparation Bootcamp</h2>
+      <p>
+        This intensive course focuses on helping students prepare for Google Summer of Code. Learn how to select the right projects, write proposals, and collaborate with open-source communities. Includes one-on-one mentorship from experienced GSoC contributors.
+      </p>
+      <a href="https://forms.gle/MeMLChKaDftwEDUR9" target="_blank" class="cta-button">Enroll Now</a>
+    </div>
+
+    <!-- Course 2 -->
+    <div class="course-card">
+      <h2>Open-Source Contributor Masterclass</h2>
+      <p>
+        Master the art of contributing to open-source projects. This course covers everything from finding beginner-friendly projects to advanced Git techniques. Gain insights from top mentors with extensive open-source experience.
+      </p>
+      <a href="https://forms.gle/MeMLChKaDftwEDUR9" target="_blank" class="cta-button">Enroll Now</a>
+    </div>
+
+    <!-- Course 3 -->
+    <div class="course-card">
+      <h2>MLH Fellowship Prep Course</h2>
+      <p>
+        Our MLH Fellowship Prep Course is designed for students aiming to join the prestigious MLH Fellowship. Learn the best practices for submitting applications, completing project work, and networking with industry experts.
+      </p>
+      <a href="https://forms.gle/MeMLChKaDftwEDUR9" target="_blank" class="cta-button">Enroll Now</a>
+    </div>
+
+    <!-- Course 4 -->
+    <div class="course-card">
+      <h2>Full Stack Development with Open-Source Projects</h2>
+      <p>
+        Learn full-stack development while contributing to real-world open-source projects. This hands-on course takes you through web development technologies, frameworks, and deploying production-ready applications.
+      </p>
+      <a href="https://forms.gle/MeMLChKaDftwEDUR9" target="_blank" class="cta-button">Enroll Now</a>
+    </div>
+
+    <!-- Course 5 -->
+    <div class="course-card">
+      <h2>Beginner's Guide to Git and GitHub</h2>
+      <p>
+        This beginner-level course introduces students to Git and GitHub, essential tools for contributing to open-source projects. Learn version control, branching, and collaboration techniques.
+      </p>
+      <a href="https://forms.gle/MeMLChKaDftwEDUR9" target="_blank" class="cta-button">Enroll Now</a>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h2>About Merge</h2>
+        <p>Merge is an innovative ed-tech platform helping students excel in open-source contributions.</p>
+      </div>
+      <div class="footer-section links">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="Index.html">About</a></li>
+          <li><a href="Sevices.html">Course</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section contact">
+        <h2>Contact Us</h2>
+        <p>Email: ayushku3435@gmail.com</p>
+        <p>Phone: 7070030645</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="current-year"></span> Merge. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script>
+    // Show/Hide Additional Course Details
+    document.querySelectorAll('.course-card').forEach(card => {
+      const toggleButton = document.createElement('button');
+      toggleButton.textContent = 'Show More';
+      toggleButton.style.marginTop = '10px';
+      toggleButton.classList.add('toggle-button');
+  
+      card.appendChild(toggleButton);
+  
+      toggleButton.addEventListener('click', function () {
+        const details = card.querySelector('p');
+        if (details.style.display === 'none') {
+          details.style.display = 'block';
+          toggleButton.textContent = 'Show Less';
+        } else {
+          details.style.display = 'none';
+          toggleButton.textContent = 'Show More';
+        }
+      });
+    });
+    
+  </script>
+  
+  
+  
+  
+</body>
+</html>
